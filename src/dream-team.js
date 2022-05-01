@@ -14,6 +14,8 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function createDreamTeam(members) {
+/*
+  
   if (members == 0) {
     return false
   }
@@ -39,7 +41,7 @@ function createDreamTeam(members) {
     } 
   }
 
-  return res.toLocaleUpperCase()
+  return res.toLocaleUpperCase()  */
 
 }
 
