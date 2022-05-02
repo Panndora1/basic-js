@@ -14,34 +14,24 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function createDreamTeam(members) {
-/*
-  
-  if (members == 0) {
-    return false
-  }
-
-  if (!Array.isArray(members)) {
+  if (members == 0 || !Array.isArray(members)) {
     return false
   }
 
   let arrSort = members.sort();
 
-  let res = '';
+  let res = [];
 
-
-  for (let i = 0; i < arrSort.length; i++) {
-    if(typeof arrSort[i] == 'string') {
-      for (let j = 0; i < arrSort[i].length; j++) {
-        if (arrSort[i][j] != ' ') {
-          res += arrSort[i][0];
-        }
-      }
-
+  arrSort.forEach(el => {
+    if(typeof el == 'string') {
+      let h = el.replace(/\s/gi, '');
+      res.push(h[0].toUpperCase())
       
-    } 
-  }
+    }
+  })
 
-  return res.toLocaleUpperCase()  */
+  return res.sort().join('')
+
 
 }
 
